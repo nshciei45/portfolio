@@ -102,9 +102,17 @@
     <script>
         var audio = document.getElementById("song");
         audio.volume = 0.03;
+        let isPlaying = false;
         document.getElementById('play-audio').addEventListener('click', function () {
-            const audio = document.getElementById('song');
-            audio.play();
+            if(!isPlaying){
+                const audio = document.getElementById('song');
+                audio.play();
+                isPlaying=true;
+            }else {
+                audio.pause();
+                isPlaying=false;
+            }
+            
         });
     </script>
 </body>
