@@ -1,0 +1,32 @@
+.no-click {
+    pointer-events: none;
+}
+
+.card:hover {
+    transform: scale(1.025);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
+}
+
+.card {
+    transition: all 0.5s ease;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+body {
+    font-family: 'Onest', sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.w50 {
+    width: 60%;
+}
+
+@media screen and (max-width:800px) {
+    .w50 {
+        width: 100%;
+    }
+}
